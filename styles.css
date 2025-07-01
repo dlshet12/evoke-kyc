@@ -1534,5 +1534,8 @@ font-size: 14px !important;
 .vd-rectangle {
   max-height: 348px;
 }
+.box {
+  min-height: 154px;
+}
 
 }
