@@ -30,6 +30,9 @@ body {
   background-image: url('./assest/hero_bg.png');
   background-size: cover;
 }
+.section-title.padding-top{
+padding-top: 30px;
+}
 
 
 .hero-content{
