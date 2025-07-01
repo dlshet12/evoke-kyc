@@ -43,7 +43,7 @@ padding-top: 30px;
   position: absolute;
   width: 917px;
   height: 127px;
-  bottom: 30%;
+   top: 50%;
   left: 140px;
   color: white;
 }
@@ -251,6 +251,11 @@ padding-top: 30px;
   bottom: 10%;
   left: 15%;
   animation-delay: 3s;
+}
+.ai-integration-mob-bg{
+  position: relative;
+  overflow:visible;
+z-index: 9;
 }
 
 @keyframes float {
@@ -720,7 +725,7 @@ padding-top: 30px;
 }
 
 .card-content ul li {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   font-size: 20px;
   line-height: 1.4;
 }
@@ -854,10 +859,14 @@ padding-top: 30px;
   display: inline-block;
   width: 100%;
 }
+.vd-grouped img{
+ max-height: 1095px;
+ height: 100%;
+}
 .section-text {
   position: absolute;
-  top: 40px;     
-  left: 20px;   
+  top: 15%;     
+  left: 13%;   
 }
 .vd-grouped img{
   width: 100%;
@@ -919,7 +928,7 @@ display: block;
   gap: 4rem;
   background-image: url('./assest/ecllips_bg.png');
   background-size: cover;
-  background-repeat: no-repeat;
+ background-repeat: round;
   padding: 0 140px;
 }
 
@@ -1054,6 +1063,9 @@ align-items: center;
 .metric-content h2{
  margin-bottom: 0;
 }
+.performace-div.tablet-view{
+  padding: 80px;
+}
 
 .metric-card {
   border-radius: 6px;
@@ -1106,6 +1118,9 @@ align-items: center;
 .mobile-view{
 display: none;
 }
+.mobile-vd{
+display: none;
+}
 @media (max-width: 2560px) {
 .conclusion-content{
 padding: 227px 0 140px 0;
@@ -1119,7 +1134,7 @@ font-size: 28px;
 @media (min-width: 2560px) {
   .transforming-KYC-wrapper {
     left: 40rem;
-    bottom: auto;
+    /* bottom: auto; */
   }
   /* .vd-rectangle{
     max-height: 1630px !important;
@@ -1128,7 +1143,7 @@ font-size: 28px;
 @media (min-width: 1920px) {
   .transforming-KYC-wrapper {
     left: 20rem;
-    bottom: auto;
+    /* bottom: auto; */
   }
   /* .vd-rectangle{
     position: relative;
@@ -1163,6 +1178,7 @@ font-size: 28px;
 }
 .performace-div.tablet-view {
   margin: 0;
+  padding: 0;
 }
 .remove-gap{
 gap: 0;
@@ -1176,7 +1192,7 @@ gap: 0;
 }
 @media (min-width: 820px) {
   .transforming-KYC-wrapper {
-    bottom: auto;
+    /* bottom: auto; */
   }
 }
 @media (width: 820px) {
@@ -1192,6 +1208,12 @@ gap: 0;
   .hero-section::before {
     background-image: url('./assest/mobile_view_hero.png');
   }
+  .mobile-vd{
+display: block;
+}
+.section-text {
+  top: 25%; 
+}
 
   .rectangle {
     display: none;
@@ -1205,7 +1227,7 @@ gap: 0;
     width: auto;
     left: 20px;
     text-align: left;
-    bottom: 50%;
+ 
     /* display: none; */
   }
 
@@ -1299,7 +1321,7 @@ gap: 0;
   }
 
   .section2-header.bottom-space {
-    padding-bottom: 66px;
+    padding-bottom: 0;
   }
 
   .users-content h2 {
@@ -1337,8 +1359,8 @@ gap: 0;
 
   .card {
     flex-direction: column;
-    min-width: 400px;
-    max-width: 400px;
+    min-width: 340px;
+    max-width: 340px;
     flex-shrink: 0;
     text-align: center;
   }
@@ -1386,7 +1408,7 @@ display: block;
 
   }
   .performace-div.tablet-view{
-    margin: 0;
+    margin: 20px 0;
   }
   .container-fluid.tablet-view{
     padding: 0 40px;
@@ -1478,6 +1500,9 @@ display: block;
       .last-mobile{
         padding-bottom: 0;
       }
+        .desktop-vd{
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1561,4 +1586,5 @@ font-size: 14px !important;
   .container-fluid.tablet-view{
     padding: 0 20px;
   }
+
 }
