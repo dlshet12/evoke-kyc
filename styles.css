@@ -849,6 +849,19 @@ padding-top: 30px;
 .vd-section img {
   width: 100%;
 }
+.vd-grouped {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.section-text {
+  position: absolute;
+  top: 40px;     
+  left: 20px;   
+}
+.vd-grouped img{
+  width: 100%;
+}
 
 .section2-header.vd-header {
 display: block;
@@ -872,7 +885,7 @@ display: block;
 }
 
 .client-div {
-  padding: 0 140px 80px 140px;
+  padding: 80px 140px 80px 140px;
 }
 
 .experience-section h2 {
