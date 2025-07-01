@@ -1063,9 +1063,9 @@ align-items: center;
 .metric-content h2{
  margin-bottom: 0;
 }
-.performace-div.tablet-view{
+/* .performace-div.tablet-view{
   padding: 80px;
-}
+} */
 
 .metric-card {
   border-radius: 6px;
@@ -1120,6 +1120,7 @@ display: none;
 }
 .mobile-vd{
 display: none;
+max-height: 473px !important;
 }
 @media (max-width: 2560px) {
 .conclusion-content{
@@ -1212,8 +1213,14 @@ gap: 0;
 display: block;
 }
 .section-text {
-  top: 25%; 
+  top: 30%; 
 }
+.split-row.content-overlap-2 {
+  gap:0;
+}
+    .split-image.content-overlap-2 img{
+      min-height: 300px;
+    }
 
   .rectangle {
     display: none;
@@ -1256,11 +1263,16 @@ display: block;
 
   .target-user-section,
   .client-div {
-    padding: 80px 20px !important;
+    padding: 40px 20px !important;
   }
 
   .split-section {
     padding: 0 20px;
+    background-image: none;
+  }
+  .split-image.content-overlap {
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .target-users {
@@ -1312,12 +1324,15 @@ display: block;
     display: flex;
     align-items: center;
     justify-self: center;
-    padding-top: 59px;
+    padding-top: 66px;
   }
 
   .content-section.dark {
     background-image: url('./assest/user_exp_mobile.png');
-    height: 60rem;
+    height: 49rem;
+  }
+  .ai-card h3 {
+    font-size: 1.3rem;
   }
 
   .section2-header.bottom-space {
@@ -1325,7 +1340,7 @@ display: block;
   }
 
   .users-content h2 {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   .users-content ul li {
@@ -1333,12 +1348,13 @@ display: block;
   }
 
   .users-content ul li::before {
-    top: 15px
+    top: 3px;
+    font-size: 1.3rem;
   }
 
   .container {
     grid-template-columns: 1fr 1fr;
-    padding: 40px 0;
+    padding: 56px 0;
   }
 
   .section2-header.research {
@@ -1393,6 +1409,7 @@ display: block;
   }
   .split-image.content-overlap-2 {
     margin-top: 0;
+    margin-left: 0;
   }
   .mobile-view{
 display: block;
@@ -1471,12 +1488,12 @@ display: block;
 
   .section-title {
     padding-bottom: 12px;
-    font-size: 36px;
+    font-size: 24px;
     color: #121212;
   }
 
   .content-section {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 
   .tech-illustration {
@@ -1488,8 +1505,11 @@ display: block;
     width: 150px;
     height: 210px;
   }
+  .section2-header.padding-bottom {
+    padding-bottom: 45px;
+  }
   .research-background {
-    padding: 80px 20px;
+    padding: 60px 20px;
       }
       .cards-container {
         padding: 0 0 40px 0 !important;
@@ -1502,6 +1522,12 @@ display: block;
       }
         .desktop-vd{
     display: none;
+  }
+    .text-wrapper-3, .text-wrapper-4 {
+    font-size: 32px;
+  }
+    .text-wrapper-5 , .section-subtitle, .users-content ul li, .content, .experience-section h2 {
+    font-size: 20px;
   }
 }
 
@@ -1525,12 +1551,8 @@ display: block;
   .metric-description {
     font-size: 10px;
   }
-  .text-wrapper-3, .text-wrapper-4 {
-    font-size: 32px;
-  }
-  .text-wrapper-5 , .section-subtitle, .users-content ul li, .content, .experience-section h2 {
-    font-size: 20px;
-  }
+
+
   .content{
   text-align: center;
   }
@@ -1576,9 +1598,9 @@ display: block;
 .main-text, .conclusion-section .stats {
 font-size: 14px !important;
 }
-/* .vd-rectangle {
-  max-height: 348px;
-} */
+  .main-image img {
+    height: 178px;
+  }
 .box {
   min-height: 154px;
 }
