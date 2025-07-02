@@ -27,8 +27,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('./assest/hero_bg.png');
-  background-size: cover;
+  background-image: url('./assest/hero_bg\ \(1\).webp');
+  background-size: 100% 100%;
 }
 .section-title.padding-top{
 padding-top: 30px;
@@ -43,7 +43,7 @@ padding-top: 30px;
   position: absolute;
   width: 917px;
   height: 127px;
-   top: 50%;
+   top: 45%;
   left: 140px;
   color: white;
 }
@@ -1184,18 +1184,62 @@ font-size: 28px;
 .remove-gap{
 gap: 0;
 }
+.mobile-vd{
+  display: block;
+}
+.desktop-vd{
+display: none;
+}
+}
+@media (max-width: 991px){
+.transforming-KYC-wrapper{
+  left: 4%;
+}
+  .text-wrapper-3, .text-wrapper-4 {
+    font-size: 40px;
+  }
+    .text-wrapper-5 , .section-subtitle, .users-content ul li, .content{
+    font-size: 18px;
+  }
+  .section-title,  .users-content h2 {
+    font-size: 38px;
+  }
+  .section-subtitle{
+    font-size: 20px;
+  }
+.card-content h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.experience-section h2 {
+  font-size: 20px;
+}
+    .target-user-section, .client-div {
+        padding: 60px 20px;
+    }
+    .split-image.content-overlap-2{
+      margin-left: 0;
+      margin-top: 0;
+    }
+    .split-image img {
+      min-height: 250px;
+    }
+    .split-image.content-overlap {
+      margin-left: 0;
+      margin-top: 0;
+    }
+    .conclusion-section h2 {
+    font-size: 38px;
+  }
+      .conclusion-section .main-text, .conclusion-section .stats {
+        font-size: 20px;
+      }
+          .conclusion-content {
+        padding: 227px 15px 140px 15px;
+    }
+}
+ 
 
-}
-@media (min-width: 1024px) {
-  .transforming-KYC-wrapper {
-    bottom: auto;
-  }
-}
-@media (min-width: 820px) {
-  .transforming-KYC-wrapper {
-    /* bottom: auto; */
-  }
-}
 @media (width: 820px) {
   .target-user-section {
     padding: 180px 20px 80px 20px !important;
@@ -1215,6 +1259,9 @@ display: block;
 .section-text {
   top: 30%; 
 }
+.split-content {
+  padding: 24px 24px 24px 24px;
+}
 .split-row.content-overlap-2 {
   gap:0;
 }
@@ -1225,7 +1272,9 @@ display: block;
   .rectangle {
     display: none;
   }
-
+.conclusion-section h2 {
+  font-size: 28px;
+}
   .ai-heading-grid {
     grid-template-columns: 1fr;
   }
@@ -1259,6 +1308,9 @@ display: block;
 
   .conclusion-section {
     padding: 80px 30px;
+  }
+  .conclusion-section .main-text, .conclusion-section .stats{
+    font-size: 14px;
   }
 
   .target-user-section,
@@ -1388,6 +1440,7 @@ display: block;
   .card-content h3 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    text-align: left;
   }
 
   .card-image img {
@@ -1416,6 +1469,16 @@ display: block;
   }
   .desktop-view{
     display: none;
+  }
+  .split-content h3 {
+    font-size: 12px;
+  }
+  .split-content h4 {
+    font-size: 18px;
+  }
+  .split-content p {
+    font-size: 12px;
+    line-height: 160%;
   }
 
   .section-container.split{
@@ -1463,6 +1526,15 @@ display: block;
   .performance-container.upper-section {
     padding-bottom: 37px;
   }
+  .split-content::before {
+    top: 28px;
+  }
+  .split-content::after {
+    top: 38px;
+}
+.split-content::after {
+  height: 58px;
+}
 }
 
 /* Responsive Design */
@@ -1608,5 +1680,8 @@ font-size: 14px !important;
   .container-fluid.tablet-view{
     padding: 0 20px;
   }
+   .split-image.content-overlap-2 img{
+      min-height: 0;
+    }
 
 }
